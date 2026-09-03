@@ -20,7 +20,7 @@
       <header>
           <nav class="navbar-top">
             <a class="navbar-top__item" href="./">Главная</a>
-            <a class="navbar-top__item" href="./projects/404.html">Проекты</a>
+            <a class="navbar-top__item" href="#skills">Навыки</a>
             <a class="navbar-top__item" href="./post/404.html">Блог</a>
             <!-- <a class="navbar-top__item" href="/index.xml">EN-RUS</a> -->
           </nav>
@@ -78,6 +78,24 @@
               <em>Сентябрь 2017 – Май 2021:</em> Студент бакалавриата, Башкирский государственный педагогический университет им. М. Акмуллы <br> Институт физики, математики, цифровых и нанотехнологий, направление «Профессиональное обучение (по отраслям)» (золотая медаль)
             </li>
           </ul>
+
+          <section id="skills" class="skills-section">
+            <h2>Навыки</h2>
+
+          <div class="skills-controls">
+              <input type="search" id="skills-search" placeholder="Поиск навыка..." autocomplete="off">
+              <div class="skills-filters" id="skills-filters">
+                  <button type="button" data-category="all" class="active">Все</button>
+                  <button type="button" data-category="frontend">Frontend</button>
+                  <button type="button" data-category="backend">Backend</button>
+                  <button type="button" data-category="tools">Tools</button>
+              </div>
+          </div>
+
+          <ul id="skills-list" class="skills-list"></ul>
+          <p id="skills-empty" class="skills-empty" hidden>Ничего не найдено</p>
+          </section>
+
           <h2 id="links">Ссылки</h2>
           <ul>
             <li>
@@ -106,5 +124,7 @@
         </small>
       </footer>
     </div>
+
+  <script src="./script/script.js" defer></script> 
   </body>
 </html>
